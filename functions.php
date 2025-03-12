@@ -6,7 +6,11 @@ function ds_theme_load_scripts (): void{
 }
 
 add_action('wp_enqueue_scripts', 'ds_theme_load_scripts');
-
-
+register_nav_menus(
+    array(
+        'ds_theme_main_menu' => "Main Menu",
+        'ds_theme_footer_menu' => "Footer Menu"
+    )
+    );
 
 ?>
